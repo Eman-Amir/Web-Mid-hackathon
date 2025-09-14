@@ -60,11 +60,11 @@ const AdminLogin = () => {
         <h2 className="text-xl font-semibold text-purple-400 mb-3">Entered Credentials</h2>
         <p className="text-gray-300">
           <span className="font-medium text-purple-400">Email:</span>{" "}
-          {email || "Not entered"}
+          { "eman661@gmail.com"}
         </p>
         <p className="text-gray-300">
           <span className="font-medium text-purple-400">Password:</span>{" "}
-          {password || "Not entered"}
+          { "123456"}
         </p>
       </div>
     </div>
