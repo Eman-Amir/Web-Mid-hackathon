@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white px-8 py-4 flex items-center justify-between shadow-md relative">
       {/* Logo */}
-      <h1 className="text-2xl font-bold">Event Registration System”</h1>
+      <h1 className="text-2xl font-bold">Event Registration System</h1>
 
       {/* Desktop Links */}
       <ul className="hidden md:flex space-x-8 text-gray-300 font-medium">
@@ -17,6 +17,7 @@ const Navbar = () => {
         <li><Link to="/about" className="hover:text-purple-400">About</Link></li>
         <li><Link to="/gallery" className="hover:text-purple-400">Gallery</Link></li>
         <li><Link to="/speakers" className="hover:text-purple-400">Speakers</Link></li>
+        <li><Link to="/schedule" className="hover:text-purple-400">Schedule</Link></li>
         <li><Link to="/contact" className="hover:text-purple-400">Contact</Link></li>
       </ul>
 
@@ -45,6 +46,7 @@ const Navbar = () => {
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-purple-400">About</Link>
           <Link to="/gallery" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Gallery</Link>
           <Link to="/speakers" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Speakers</Link>
+          <Link to="/schedule" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Schedule</Link>          <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Contact</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Contact</Link>
           <Link
             to="/Adminloginpage"

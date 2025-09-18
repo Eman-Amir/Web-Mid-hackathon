@@ -91,7 +91,7 @@ const Contact = () => {
             <div className="sm:col-span-2 text-center">
               <button
                 type="submit"
-                className="bg-neonBlue text-black px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-[0_0_15px_#00f7ff] hover:-translate-y-0.5"
+                className="bg-neonBlue  text-gray-200  px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-[0_0_15px_#00f7ff] hover:-translate-y-0.5"
               >
                 Submit
               </button>
