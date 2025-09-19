@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
 import EventsPage from "./components/eventspage"; 
@@ -15,11 +16,12 @@ import RegistrationSuccess from "./components/RegistrationSuccess";
 function App() {
   return (
     <Router>
+      <ScrollToTop /> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/eventspage" element={<EventsPage />} /> {/* ✅ */}
-        {/* <Route path="/success" element={<RegistrationSuccess />} /> */}
+        <Route path="/success" element={<RegistrationSuccess />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/speakers" element={<Speakers />} />

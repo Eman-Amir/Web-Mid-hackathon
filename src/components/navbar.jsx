@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white px-8 py-4 flex items-center justify-between shadow-md relative">
+    <nav className="sticky top-0 z-50 bg-gradient-to-br from-gray-900 via-black to-blue-900  text-white px-8 py-4 flex items-center justify-between shadow-md ">
       {/* Logo */}
       <h1 className="text-2xl font-bold">Event Registration System</h1>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-black text-gray-300 flex flex-col items-center space-y-4 py-6 md:hidden z-50">
+        <div className="absolute top-full left-0 w-full bg-gradient-to-br from-gray-900 via-black to-blue-900 text-gray-300 flex flex-col items-center space-y-4 py-6 md:hidden z-50">
           <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-purple-400">About</Link>
           <Link to="/gallery" onClick={() => setIsOpen(false)} className="hover:text-purple-400">Gallery</Link>
